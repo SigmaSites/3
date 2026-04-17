@@ -266,7 +266,7 @@
 </div>
 
 <script>
-const ADMIN_PASSWORD = "***";
+const ADMIN_PASSWORD = "MaxsShop1234567890MaximilianMichael13!";
 const FIREBASE_URL   = "https://test123-13d2b-default-rtdb.europe-west1.firebasedatabase.app";
 
 let items = [], filaments = [];
@@ -440,7 +440,7 @@ let currentImageBase64 = '';
 function handleImageUpload(input) {
   const file = input.files[0];
   if (!file) return;
-  if (file.size > 600000) { toast('Bild zu groß! Bitte unter 600 KB.', 'error'); return; }
+  if (file.size > 4000000) { toast('Bild zu groß! Bitte unter 4 MB.', 'error'); return; }
   const reader = new FileReader();
   reader.onload = e => {
     currentImageBase64 = e.target.result;
@@ -492,4 +492,4 @@ document.getElementById('passwordInput').focus();
 document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.visible').forEach(m=>m.classList.remove('visible'));});
 </script>
 </body>
-  </html>
+</html>
